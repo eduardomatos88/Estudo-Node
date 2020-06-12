@@ -21,6 +21,14 @@ module.exports = {
   delete(req, res) {
     const { index } = req.params
     users.splice(index, 1)
-    return res.json(users)
+    return res.json()
+  },
+
+  checkUserInArray(req, res, next) {
+    const { index } = req.params
+    if (!users[index]) {
+      return res.status(400).json({ error: "User not found" })
+    }
+    return next()
   },
 }
