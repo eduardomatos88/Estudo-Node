@@ -1,3 +1,3 @@
 # Curso Node
-## Desafio
-Curso nos desafia a criar um sistema de barbearia, utilizando orientação a objetos para fixar o aprendizado.
+
+Construindo uma aplicação junto ao curso pra aprender funcionalidades e o poder do javascript.
