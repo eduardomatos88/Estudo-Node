@@ -1,11 +1,14 @@
 import Sequelize from 'sequelize'
 
 class File extends Sequelize.Model {
-  static init() {
-    super.init({
-      name: Sequelize.STRING,
-      path: Sequelize.STRING,
-    })
+  static init(sequelize) {
+    super.init(
+      {
+        name: Sequelize.STRING,
+        path: Sequelize.STRING,
+      },
+      { sequelize }
+    )
     return this
   }
 }
