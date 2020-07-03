@@ -20,11 +20,12 @@ class Database {
       .map(model => model.associate && model.associate(this.connection.models))
   }
   mongo() {
-    this.mongoConnection = mongoose.connect('mongodb://127.0.0.1/gobarber', {
+    mongoose.connect('mongodb://127.0.0.1/gobarber', {
       useNewUrlParser: true,
       useFindAndModify: true,
       useUnifiedTopology: true,
     })
+    this.mongoConnection = mongoose.connection
   }
 }
 export default new Database()
