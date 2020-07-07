@@ -27,8 +27,11 @@ class Queue {
   processQueue() {
     jobs.forEach(job => {
       const { bee, hundle } = this.queues[job.key]
-      bee.process(hundle)
+      bee.on('failed', this.hundleFailure).process(hundle)
     })
+  }
+  hundleFailure(job, error) {
+    console.log(`Queue ${job.queue.name}: FAILED`, error)
   }
 }
 

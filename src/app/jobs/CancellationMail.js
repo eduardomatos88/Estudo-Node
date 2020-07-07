@@ -9,7 +9,7 @@ class CancellationMail {
   }
   async hundle({ data }) {
     const { appointment } = data
-    console.log('Foi')
+    console.log('Enfileirado')
     await Mail.sendMail({
       to: `${appointment.provider.name} <${appointment.provider.email}>`,
       subject: 'Agendamento cancelado',
