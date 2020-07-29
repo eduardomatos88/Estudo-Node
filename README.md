@@ -2,13 +2,17 @@
 
 ## Node.js
 
-Após participar da **Next Level Week** e ver o quanto o javascript é dinâmico e principalmente as muitas fucnionalidades diferentes das linguagens que aprendi até o momento, dicidi estudar mais a fundo essas ferramentas. Obrigado pela oportunidade Rocketseat!
-- Utilizado classes para 
+Após participar da **Next Level Week** e ver o quanto o javascript é dinâmico e principalmente as muitas fucnionalidades diferentes das linguagens que aprendi até o momento, dicidi estudar mais a fundo essas ferramentas. Obrigado pela oportunidade Rocketseat:rocket:!
 
 ## Ferramentas utilizadas:
 ### MVC
 Arquitetura bem famosa para uma melhor organização da aplicação, com cada responsabilidade no seu devido lugar.
-- Cada entidade fica em um controller diferente, para que o controller não tenha mais do que a sua responsabilidade.
+
+- Design pattern **Factory Method**:
+  - Um controller nunca chama outro controller ou método, ele fica completamente isolado.
+  - Cada entidade fica em um controller diferente, para que o controller não tenha mais do que a sua responsabilidade.
+- Utilizado classes para cada controller, pois fica aparentemente mais organizado e fácil de ler com o conceito de **orientação a objeto**.
+- A comunicação vai sempre ocorrer entre **JSON**.
 ### Express
 Ao pensar em criação de uma api REST o pacote mais famoso e completo para se trabalhar é o *express*, sem dúvida a melhor opção.
 ### Sucrase 
