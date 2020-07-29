@@ -1,7 +1,5 @@
 <h1 align="center">Aprendendo sobre NodeJS</h1>
 
-<img alt="Version" src="https://img.shields.io/github/languages/top/eduardomatos88/Estudo-Node?color=brightgreen&style=flat" />
-
 ## Node.js
 
 Após participar da **Next Level Week** e ver o quanto o javascript é dinâmico e principalmente as muitas fucnionalidades diferentes das linguagens que aprendi até o momento, dicidi estudar mais a fundo essas ferramentas. Obrigado pela oportunidade Rocketseat!
